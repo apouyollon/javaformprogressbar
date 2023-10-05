@@ -12,18 +12,23 @@
         <div class="positionbar bartofile"></div>
         <div class="positionbar progressbar"></div>
         
-        <form method="get" action:"form2.html">
-            <label for="nom">Nom : </label>
-            <input type="text" name="nom" class="input_0"/><br>
-            <label for="prenom">Prénom : </label>
-            <input type="text" name="prenom" id="input_1"/><br>
-            <label for="datenaissance">Date de naissance : </label>
-            <input type="datetime-local" name="datenaissance" id="input_2"/><br>
-            <label for="mail">Mail : </label>
-            <input type="email" name="mail" id="input_3"/><br>
-            <label for="telephone">Téléphone : </label>
-            <input type="email" name="mail" id="input_4"/><br>
-            <button onclick:'fonction_javascript_valider' type="submit">Valider</button>
+        <form method="get">
+            <div id="form_part_1">
+                <label for="nom">Nom : </label>
+                <input type="text" name="nom" id="input_0" required/><br>
+                <label for="prenom">Prénom : </label>
+                <input type="text" name="prenom" id="input_1" required/><br>
+                <label for="datenaissance">Date de naissance : </label>
+                <input type="datetime-local" name="datenaissance" id="input_2" required/><br>
+                <label for="mail">Mail : </label>
+                <input type="email" name="mail" id="input_3" required/><br>
+                <label for="telephone">Téléphone : </label>
+                <input type="email" name="mail" id="input_4" required/><br>
+                <button onclick:'fonction_javascript_valider' type="submit">Valider</button>
+            </div>
+            <div id="form_part_2">
+
+            </div>
         </form>
 
         <script src="script.js"></script>
