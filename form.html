@@ -12,22 +12,21 @@
         <div class="positionbar bartofile"></div>
         <div class="positionbar progressbar"></div>
         
-        <form method="get">
+        <form name="form" method="get">
             <div id="form_part_1">
-                <label for="nom">Nom : </label>
-                <input type="text" name="nom" id="input_0" required/><br>
-                <label for="prenom">Prénom : </label>
-                <input type="text" name="prenom" id="input_1" required/><br>
-                <label for="datenaissance">Date de naissance : </label>
-                <input type="datetime-local" name="datenaissance" id="input_2" required/><br>
-                <label for="mail">Mail : </label>
-                <input type="email" name="mail" id="input_3" required/><br>
-                <label for="telephone">Téléphone : </label>
-                <input type="email" name="mail" id="input_4" required/><br>
-                <button onclick:'fonction_javascript_valider' type="submit">Valider</button>
+                <label for="input_0">Question 1 : </label>
+                <input onchange="changebar('0')" type="text" name="input_0" class="input_0 question" required/><br>
+                <label for="input_1">Question 2 : </label>
+                <input onchange="changebar('1')" type="text" name="input_1" class="input_1 question" required/><br>
+                <button onclick='display_part("2","1")'>Suivant</button>
             </div>
-            <div id="form_part_2">
-
+            <div id="form_part_2"> <!-- initially not displayed-->
+                <label for="input_2">Question 3 : </label>
+                <input onchange="changebar('2')" type="text" name="input_2" class="input_2 question" required/><br>
+                <label for="input_3">Question 4 : </label>
+                <input onchange="changebar('3')" type="text" name="input_3" class="input_3 question" required/><br>
+                <button onclick='display_part("1","2")'>Precedent</button>
+                <button type="submit">Valider</button>
             </div>
         </form>
 
